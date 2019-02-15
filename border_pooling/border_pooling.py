@@ -21,6 +21,11 @@ index的size之所以和x一致,是因为它要把每个元素对应好位置放
 
 '''
 
+'''
+border pooling:
+实现，在每列/行中找出连续的1(>thre)序列，然后取出1序列中的最大值及对应的索引.这段序列中的其他1就忽略掉(val置零.)
+'''
+
 
 def thres_maxpooling(map2d, thre):
     h, w = map2d.size()
